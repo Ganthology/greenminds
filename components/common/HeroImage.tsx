@@ -1,5 +1,6 @@
 import React from 'react'
 import { createStyles, Container, Title, Text, Button } from '@mantine/core'
+import { useRouter } from 'next/router'
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -76,6 +77,8 @@ const useStyles = createStyles((theme) => ({
 
 export function HeroImageRight() {
   const { classes } = useStyles()
+  const router = useRouter()
+
   return (
     <div className={classes.root}>
       <Container size='lg'>
@@ -104,6 +107,7 @@ export function HeroImageRight() {
               size='xl'
               className={`${classes.control} bg-gradient-to-r from-green-700 to-yellow-500 rounded-md`}
               mt={40}
+              onClick={() => router.push('/signin')}
             >
               Connect now
             </Button>

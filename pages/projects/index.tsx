@@ -1,5 +1,6 @@
 import { Navbar } from '../../components/mentorship/Navbar'
 import { Container } from '@mantine/core'
+import ProjectCard from '../../components/projects/ProjectCard'
 
 const Projects = () => {
   return (
@@ -21,6 +22,7 @@ const Projects = () => {
         <div>
           <h1 className='text-2xl font-semibold'>Ongoing Fundraiser</h1>
         </div>
+        <ProjectCard />
       </Container>
     </div>
   )
