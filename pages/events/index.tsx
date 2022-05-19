@@ -22,7 +22,75 @@ const Events = () => {
         <div>
           <h1 className='text-2xl font-semibold'>Recent Events</h1>
         </div>
-        <EventCard />
+        <div className='flex space-x-4'>
+          <EventCard
+            start={5}
+            end={6}
+            name='Foundation of Future Food'
+            date='22 May 2022'
+            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhIeUuaS8t-sHfW8CoKir_pDEKr1cPXFGfg&usqp=CAU'
+          />
+          <EventCard
+            start={5}
+            end={6}
+            name='Foundation of Future Food'
+            date='22 May 2022'
+            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhIeUuaS8t-sHfW8CoKir_pDEKr1cPXFGfg&usqp=CAU'
+          />
+          <EventCard
+            start={5}
+            end={6}
+            name='Foundation of Future Food'
+            date='22 May 2022'
+            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhIeUuaS8t-sHfW8CoKir_pDEKr1cPXFGfg&usqp=CAU'
+          />
+        </div>
+        <div className='flex space-x-4'>
+          <EventCard
+            start={5}
+            end={6}
+            name='Foundation of Future Food'
+            date='22 May 2022'
+            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhIeUuaS8t-sHfW8CoKir_pDEKr1cPXFGfg&usqp=CAU'
+          />
+          <EventCard
+            start={5}
+            end={6}
+            name='Foundation of Future Food'
+            date='22 May 2022'
+            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhIeUuaS8t-sHfW8CoKir_pDEKr1cPXFGfg&usqp=CAU'
+          />
+          <EventCard
+            start={5}
+            end={6}
+            name='Foundation of Future Food'
+            date='22 May 2022'
+            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhIeUuaS8t-sHfW8CoKir_pDEKr1cPXFGfg&usqp=CAU'
+          />
+        </div>
+        <div className='flex space-x-4'>
+          <EventCard
+            start={5}
+            end={6}
+            name='Foundation of Future Food'
+            date='22 May 2022'
+            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhIeUuaS8t-sHfW8CoKir_pDEKr1cPXFGfg&usqp=CAU'
+          />
+          <EventCard
+            start={5}
+            end={6}
+            name='Foundation of Future Food'
+            date='22 May 2022'
+            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhIeUuaS8t-sHfW8CoKir_pDEKr1cPXFGfg&usqp=CAU'
+          />
+          <EventCard
+            start={5}
+            end={6}
+            name='Foundation of Future Food'
+            date='22 May 2022'
+            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhIeUuaS8t-sHfW8CoKir_pDEKr1cPXFGfg&usqp=CAU'
+          />
+        </div>
       </Container>
     </div>
   )
