@@ -12,6 +12,7 @@ import {
   Burger,
 } from '@mantine/core'
 import { useBooleanToggle } from '@mantine/hooks'
+import { useDisclosure } from '@mantine/hooks'
 import {
   Logout,
   Heart,
@@ -102,11 +103,12 @@ interface HeaderTabsProps {
 
 export function Navbar({ user, tabs, currentIndex }: HeaderTabsProps) {
   const { classes, theme, cx } = useStyles()
-  const [opened, toggleOpened] = useBooleanToggle(false)
+  // const [opened, toggleOpened] = useBooleanToggle(false)
   const [userMenuOpened, setUserMenuOpened] = useState(false)
   const [index, setIndex] = useState(currentIndex)
 
   const router = useRouter()
+  const [opened, handlers] = useDisclosure(false)
 
   const items = tabs.map((tab) => <Tabs.Tab label={tab.name} key={tab.name} />)
 
@@ -116,13 +118,33 @@ export function Navbar({ user, tabs, currentIndex }: HeaderTabsProps) {
         <Group position='apart'>
           <Image src={GreenMindsLogo} alt='GreenMinds' height={50} width={50} />
 
-          <Burger
+          {/* <Burger
             opened={opened}
             onClick={() => toggleOpened()}
             className={classes.burger}
             size='sm'
             color={theme.white}
-          />
+          /> */}
+          <div className='flex sm:hidden'>
+            <Menu
+              opened={opened}
+              onOpen={handlers.open}
+              onClose={handlers.close}
+              className='bg-green-500/80 rounded-md'
+            >
+              <Menu.Label>Tabs</Menu.Label>
+              {tabs.map((tab) => {
+                return (
+                  <Menu.Item
+                    key={tab.name}
+                    onClick={() => router.push(tab.path)}
+                  >
+                    {tab.name}
+                  </Menu.Item>
+                )
+              })}
+            </Menu>
+          </div>
 
           <Menu
             size={260}
