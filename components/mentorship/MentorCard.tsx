@@ -1,5 +1,5 @@
 import { Card, Image, Badge } from '@mantine/core'
-import { Briefcase, Building, Flag } from 'tabler-icons-react'
+import { Briefcase, Building, Flag, Star } from 'tabler-icons-react'
 import Link from 'next/link'
 
 interface MentorCardProps {
@@ -35,7 +35,10 @@ const MentorCard = ({
         </Card.Section>
         <Card.Section className='px-4 pt-2 pb-2 flex items-center space-x-2'>
           <p className='font-semibold text-lg'>{name}</p>
-          <p className='font-semibold text-sm'>{review}</p>
+          <div className='flex space-x-1 items-center'>
+            <p className='font-semibold text-sm'>{review}</p>
+            <Star size={12} />
+          </div>
         </Card.Section>
         <Card.Section className='px-4 pb-2 font-medium'>
           <div className='flex items-center space-x-2'>

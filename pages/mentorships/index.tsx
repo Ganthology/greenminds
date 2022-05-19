@@ -27,16 +27,20 @@ const Mentorships = () => {
               required
               placeholder='Specialisation'
               data={[
-                { value: 'malaysia', label: 'Malaysia' },
-                { value: 'thailand', label: 'Thailand' },
-                { value: 'philippines', label: 'Philippines' },
-                { value: 'indonesia', label: 'Indonesia' },
+                { value: 'malaysia', label: 'Green Farming Techniques' },
+                { value: 'thailand', label: 'Smart Farming Techniques' },
+                { value: 'philippines', label: 'Food and Product Safety' },
+                { value: 'indonesia', label: 'Future Food' },
+                { value: 'indonesia', label: 'Reusable Energy' },
+                { value: 'indonesia', label: 'Food Waste' },
+                { value: 'indonesia', label: 'Future Food' },
+                { value: 'indonesia', label: 'Bio-Circular-Green Economy' },
               ]}
               searchable
               allowDeselect
               size='lg'
               icon={<Apple size={24} />}
-              className='w-1/4'
+              className='w-1/2 sm:w-1/4'
             />
             <Select
               required
@@ -51,15 +55,21 @@ const Mentorships = () => {
               allowDeselect
               size='lg'
               icon={<Flag size={24} />}
-              className='w-1/4'
+              className='w-1/2 sm:w-1/4'
             />
             <TextInput
               rightSection={<Search size={24} />}
               placeholder='Find a mentor'
               size='lg'
-              className='w-1/2'
+              className='hidden sm:block sm:w-1/2'
             />
           </div>
+          <TextInput
+            rightSection={<Search size={24} />}
+            placeholder='Find a mentor'
+            size='lg'
+            className='sm:hidden'
+          />
         </div>
         <div className='space-y-4'>
           <div className='sm:flex rounded-md text-sm font-light sm:space-x-4 space-y-4 sm:space-y-0'>

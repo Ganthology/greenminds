@@ -26,10 +26,14 @@ const Mentor = () => {
             label='Topic Specialisation'
             placeholder='Choose a topic'
             data={[
-              { value: 'malaysia', label: 'Malaysia' },
-              { value: 'thailand', label: 'Thailand' },
-              { value: 'philippines', label: 'Philippines' },
-              { value: 'indonesia', label: 'Indonesia' },
+              { value: 'malaysia', label: 'Green Farming Techniques' },
+              { value: 'thailand', label: 'Smart Farming Techniques' },
+              { value: 'philippines', label: 'Food and Product Safety' },
+              { value: 'indonesia', label: 'Future Food' },
+              { value: 'indonesia', label: 'Reusable Energy' },
+              { value: 'indonesia', label: 'Food Waste' },
+              { value: 'indonesia', label: 'Future Food' },
+              { value: 'indonesia', label: 'Bio-Circular-Green Economy' },
             ]}
             searchable
             allowDeselect

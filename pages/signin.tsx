@@ -26,8 +26,8 @@ const Signin = () => {
   return (
     <div className='mx-auto h-screen bg-[#081c15] scroll-smooth'>
       <Navbar />
-      <div className='container bg-zinc-50 mx-auto px-6 py-4 rounded-lg shadow-lg grid grid-cols-2'>
-        <div className='space-y-4 border-r-2 pr-4'>
+      <div className='container bg-zinc-50 mx-auto px-6 py-4 rounded-lg shadow-lg sm:grid sm:grid-cols-2'>
+        <div className='space-y-4 sm:border-r-2 sm:pr-4'>
           <h1 className='text-2xl font-semibold'>Sign In</h1>
           <form
             onSubmit={form.onSubmit((values) => router.push('/home'))}

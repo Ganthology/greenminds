@@ -3,6 +3,7 @@ import { Container, Select, TextInput } from '@mantine/core'
 import MentorCard from '../components/mentorship/MentorCard'
 import { Search, Apple, Flag } from 'tabler-icons-react'
 import { Calendar } from '@mantine/dates'
+import LearningCard from '../components/learning/LearningCard'
 import Link from 'next/link'
 
 const Home = () => {
@@ -44,6 +45,23 @@ const Home = () => {
             <h1 className='font-semibold text-2xl'>Learning Resources</h1>
             <p className='text-xs underline hover:cursor-pointer'>See all</p>
           </div>
+        </div>
+        <div className='sm:flex sm:space-x-4 space-y-4 sm:space-y-0'>
+          <LearningCard
+            src={
+              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhIeUuaS8t-sHfW8CoKir_pDEKr1cPXFGfg&usqp=CAU'
+            }
+          />
+          <LearningCard
+            src={
+              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhIeUuaS8t-sHfW8CoKir_pDEKr1cPXFGfg&usqp=CAU'
+            }
+          />
+          <LearningCard
+            src={
+              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhIeUuaS8t-sHfW8CoKir_pDEKr1cPXFGfg&usqp=CAU'
+            }
+          />
         </div>
       </Container>
     </div>

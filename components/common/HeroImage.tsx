@@ -98,9 +98,8 @@ export function HeroImageRight() {
             </Title>
 
             <Text className={classes.description} mt={30}>
-              Build fully functional accessible web applications with ease –
-              Mantine includes more than 100 customizable components and hooks
-              to cover you in any situation
+              Learn from the experts, Share your knowledge, Get funded and start
+              your green economy business today.
             </Text>
 
             <Button
