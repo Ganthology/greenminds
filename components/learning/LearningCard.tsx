@@ -1,4 +1,5 @@
 import { Card, Image, Badge } from '@mantine/core'
+import Link from 'next/link'
 
 interface LearningCardProps {
   src: string
@@ -6,7 +7,7 @@ interface LearningCardProps {
 
 const LearningCard = ({ src }: LearningCardProps) => {
   return (
-    <div>
+    <Link href='https://www.youtube.com/watch?v=W3M65Iy2DXQ'>
       <Card className='rounded-lg bg-stone-100 hover:-translate-y-1 shadow-lg transition hover:cursor-pointer'>
         <Card.Section>
           <Image
@@ -25,7 +26,7 @@ const LearningCard = ({ src }: LearningCardProps) => {
           <Badge color='grape'>Green Tech</Badge>
         </Card.Section>
       </Card>
-    </div>
+    </Link>
   )
 }
 
